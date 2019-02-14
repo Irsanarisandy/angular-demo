@@ -1,0 +1,17 @@
+.hero {
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__id {
+    margin-top: 15px;
+  }
+
+  &__name {
+    margin-top: 15px;
+
+    &-input {
+      margin-left: 10px;
+    }
+  }
+}
