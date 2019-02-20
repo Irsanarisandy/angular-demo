@@ -1,27 +1,25 @@
 .heroes {
-  &__title {
-    margin-bottom: 0;
-  }
-
   &__info {
     background-color: #EEE;
     border-radius: 4px;
     cursor: pointer;
-    margin: 15px auto 0;
-    padding: 15px 0;
     text-align: left;
     width: 200px;
+  }
+
+  &__link {
+    color: darken(#EEE, 40%);
+    display: inline-block;
+    margin: 15px 0;
+    text-decoration: none;
 
     &:hover {
-      background-color: #DDD;
-    }
+      text-decoration: none;
 
-    &.selected {
-      background-color: #CFD8DC;
-    }
-
-    &.selected:hover {
-      background-color: #BBD8DC;
+      .heroes__info {
+        background-color: #DDD;
+        color: darken(#BBD8DC, 40%);
+      }
     }
   }
 
@@ -29,10 +27,12 @@
     background-color: #607D8B;
     border-radius: 4px 0 0 4px;
     color: #FFF;
+    margin: 0;
     padding: 15px;
   }
 
   &__name {
-    margin: 0 15px;
+    margin: 0;
+    padding: 15px;
   }
 }

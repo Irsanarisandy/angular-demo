@@ -1,6 +1,10 @@
-<h2 class="heroes__title">My Heroes</h2>
-<div class="heroes__info" *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-  <span class="heroes__id">{{hero.id}}</span>
-  <span class="heroes__name">{{hero.name}}</span>
+<h2>My Heroes</h2>
+<div class="d-flex flex-column align-items-center">
+  <a class="heroes__link" *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+    <div class="d-flex heroes__info">
+      <p class="heroes__id">{{hero.id}}</p>
+      <p class="heroes__name">{{hero.name}}</p>
+    </div>
+  </a>
 </div>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>

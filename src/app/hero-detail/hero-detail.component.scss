@@ -1,13 +1,6 @@
 .hero {
-  &__title {
-    margin-bottom: 0;
-  }
-
   &__info {
-    margin-top: 15px;
-
-    &-input {
-      margin-left: 10px;
-    }
+    margin: 15px 0;
+    width: 350px;
   }
 }

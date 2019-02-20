@@ -1,10 +1,11 @@
 <div *ngIf="hero">
-  <h2 class="hero__title">{{hero.name.toUpperCase()}} Details</h2>
-  <div class="hero__info">
-    <label>ID: {{hero.id}}</label>
+  <h2>{{hero.name.toUpperCase()}} Details</h2>
+  <label class="mt-3 mb-0">ID: {{hero.id}}</label>
+  <div class="input-group mx-auto hero__info">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Name:</span>
+    </div>
+    <input class="form-control" type="text" [(ngModel)]="hero.name" placeholder="name" />
   </div>
-  <div class="hero__info">
-    <label>Name:</label>
-    <input class="hero__info-input" [(ngModel)]="hero.name" placeholder="name" />
-  </div>
+  <button (click)="goBack()">Go Back</button>
 </div>
