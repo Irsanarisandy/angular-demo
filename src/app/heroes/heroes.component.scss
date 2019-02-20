@@ -4,10 +4,35 @@
   }
 
   &__info {
-    margin-top: 15px;
+    background-color: #EEE;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px auto 0;
+    padding: 15px 0;
+    text-align: left;
+    width: 200px;
 
-    &-input {
-      margin-left: 10px;
+    &:hover {
+      background-color: #DDD;
     }
+
+    &.selected {
+      background-color: #CFD8DC;
+    }
+
+    &.selected:hover {
+      background-color: #BBD8DC;
+    }
+  }
+
+  &__id {
+    background-color: #607D8B;
+    border-radius: 4px 0 0 4px;
+    color: #FFF;
+    padding: 15px;
+  }
+
+  &__name {
+    margin: 0 15px;
   }
 }
